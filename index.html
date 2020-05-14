@@ -47,7 +47,7 @@
 
             <form method="post" action="./lanceweb.aspx" id="form_controle">
                 <div class="my-3">
-                    <span id="Label2" class="d-block mr-2">Selecione o Evento:</span>
+                    <span id="Label2" class="d-block mr-2 mb-2">Selecione o Evento:</span>
                     <select name="ddEvento"
                         onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ddEvento\&#39;,\&#39;\&		#39;)&#39;, 0)"
                         id="ddEvento" class="label_geral">
@@ -56,10 +56,10 @@
                         </option>
                     </select>
                     <input type="submit" name="btnIniEvent" value="Iniciar Leilão" id="btnIniEvent" disabled="disabled"
-                        class="aspNetDisabled btn_input" />
+                        class="aspNetDisabled btn_input"/>
                 </div>
                 <div class="my-3">
-                    <span id="Label3" class="label_geral d-block">Selecione o Lote:</span>
+                    <span id="Label3" class="label_geral d-block mb-2">Selecione o Lote:</span>
                     <select name="ddLote"
                         onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ddLote\&#39;,\&#39;\&#39;)&#39;, 0)"
                         id="ddLote" disabled="disabled" class="aspNetDisabled label_geral">
@@ -77,16 +77,17 @@
                 <span id="lblLanceAtual" class="label_LanceAtual"></span>
             </div>
 
+            <div class="d-flex align-items-end">
+                <span id="Label5" class="label_geral align-self-center">Lançar:</span>
+                <input name="txtLance" type="number" value="0" id="txtLance" disabled="disabled"
+                    class="aspNetDisabled label_geral input_lance text-center" onkeyup="filtraNumeros(this, event)" />
+                <span id="Label7" class="label_geral mr-1"></span>
 
-            <span id="Label5" class="label_geral">Lançar:</span>
-            <input name="txtLance" type="number" value="0" id="txtLance" disabled="disabled"
-                class="aspNetDisabled label_geral input_lance text-center" onkeyup="filtraNumeros(this, event)" />
-            <span id="Label7" class="label_geral"></span>
-
-            <input type="submit" name="btnLance" value="Próximo Lance" id="btnLance" disabled="disabled"
-                class="aspNetDisabled btn_input" />
-            <input type="submit" name="btnComprador" value="Finalizar Compra" id="btnComprador" disabled="disabled"
-                class="aspNetDisabled btn_input float-right bg-success" />
+                <input type="submit" name="btnLance" value="Próximo Lance" id="btnLance" disabled="disabled"
+                    class="aspNetDisabled btn_input" />
+                <input type="submit" name="btnComprador" value="Finalizar Compra" id="btnComprador" disabled="disabled"
+                    class="aspNetDisabled btn_input ml-auto bg-success" />
+            </div>
         </div>
 
         <div id="principal">

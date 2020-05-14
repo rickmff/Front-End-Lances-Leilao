@@ -55,6 +55,7 @@
         height: auto;
         width: 20%;
         margin-left: -0.68rem;
+        margin-bottom: -6px;
     }
 
     .fa-wifi {
@@ -79,8 +80,8 @@
     /* SELECT EVENT */
 
     .btn_input {
-        padding-top: 6px;
-        padding-bottom: 5.5px;
+        padding-top: 4.5px;
+        padding-bottom: 5px;
         padding-right: 10px;
         padding-left: 10px;
         font-family: 'Roboto', sans-serif;
