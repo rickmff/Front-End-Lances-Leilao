@@ -1,0 +1,120 @@
+    .body {
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        color: #2b4060;
+    }
+    
+    span {
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        color: #2b4060;
+        font-weight: bold;
+    }
+
+    iframe {
+        border-width: 1.25px !important;
+        border-color: #a78e09 !important;
+    }
+
+    form {
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        color: #2b4060;
+    }
+    
+    select, .input_lance {
+        width: auto;
+        margin-left: 1rem;
+        padding-left: .25rem;
+        height: 35px;
+        border: solid 1px #2b4060;
+    }
+
+    select:focus {
+        outline-width: 3px;
+        outline-color: #a78e09;
+    }
+
+    option {
+        font-size: 14px;
+    }
+    
+    option {
+        padding: 0.15rem;
+    }
+    /* NAV */
+    
+    .topo {
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 3rem;
+    }
+    
+    .logo {
+        float: left;
+        height: auto;
+        width: 20%;
+        margin-left: -0.68rem;
+    }
+
+    .fa-wifi {
+        color: #a78e09;
+        margin-top: -5px;
+    }
+    
+    .lbl_titulo {
+        width: 25%;
+        height: 100px;
+        font-size: 42px;
+        color: #2b4060;
+        margin-left: auto;
+        padding-top: 1rem;
+        text-align: center;
+    }
+
+    #ifLogados {
+        height: 100px;
+    }
+
+    /* SELECT EVENT */
+
+    .btn_input {
+        padding-top: 6px;
+        padding-bottom: 5.5px;
+        padding-right: 10px;
+        padding-left: 10px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        background-color: #2b4060;
+        color: white;
+        font-weight: bold;
+        transition: .1s;
+        border: 1px solid #a78e09;
+        border-radius: 2px;
+        text-align: center;
+        letter-spacing: 1.5px;
+    }
+
+    .btn_input:hover {
+        cursor: pointer;
+        transition: .3s;
+        background-color: #a78e09;
+    }
+
+    .label_LanceAtual {
+        height: 200px;
+    }
+
+    .iframe_lances {
+        float: right;
+        height: 100px;
+    }
+
+    #btnComprador {
+        width: 300px;
+        border: 1px solid #a78e09;
+    }
+
+    .bg-success:hover,.bg-danger:hover {
+    opacity: 0.8;
+    }

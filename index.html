@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title> Estancia Bahia leilões - Lances </title>
+    <link href="css/controle.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="col-12">
+            <form method="post" action="./lanceweb.aspx" id="form_controle">
+                <div class="aspNetHidden">
+                    <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+                    <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+                    <input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="" />
+                </div>
+
+                <div class="aspNetHidden">
+                    <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="91E27D8E" />
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="container my-3">
+
+        <div class="topo">
+            <img class="logo" src="img/novaLogo.jpg" />
+            <span id="Label1" class="lbl_titulo">
+                <!-- <i class="fas fa-plug mr-3"></i> -->
+                <i class="fas fa-wifi"></i>
+                <!--  <i class="fas fa-signal mr-1"></i> -->
+                Online
+            </span>
+            <iframe id="ifLogados" class="ml-auto mt-2" src="ativos.aspx" name="I1"></iframe>
+
+            <div id="Panel1"></div>
+        </div>
+
+        <div id="selecao">
+
+            <form method="post" action="./lanceweb.aspx" id="form_controle">
+                <div class="my-3">
+                    <span id="Label2" class="d-block mr-2">Selecione o Evento:</span>
+                    <select name="ddEvento"
+                        onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ddEvento\&#39;,\&#39;\&		#39;)&#39;, 0)"
+                        id="ddEvento" class="label_geral">
+                        <option selected="selected" value="Selecione o Evento">Selecione o Evento</option>
+                        <option value="2197"> ( 17/05/20 ) ( 2197 ) 8&#176; LEILAO VIRTUAL MARCA 40 &amp; PARCEIROS
+                        </option>
+                    </select>
+                    <input type="submit" name="btnIniEvent" value="Iniciar Leilão" id="btnIniEvent" disabled="disabled"
+                        class="aspNetDisabled btn_input" />
+                </div>
+                <div class="my-3">
+                    <span id="Label3" class="label_geral d-block">Selecione o Lote:</span>
+                    <select name="ddLote"
+                        onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ddLote\&#39;,\&#39;\&#39;)&#39;, 0)"
+                        id="ddLote" disabled="disabled" class="aspNetDisabled label_geral">
+                        <option selected="selected" value="Selecione o Lote">Selecione o Lote</option>
+                    </select>
+                    <input type="submit" name="btnAtivar" value="Iniciar Lote" id="btnAtivar" disabled="disabled"
+                        class="aspNetDisabled btn_input" />
+                </div>
+            </form>
+
+            <iframe id="I2" class="iframe_lances" src="lance_web.aspx" width="300" height="60" name="I1"></iframe>
+
+            <div class="my-5">
+                <span id="Label6" class="label_geral">Lance Atual:</span>
+                <span id="lblLanceAtual" class="label_LanceAtual"></span>
+            </div>
+
+
+            <span id="Label5" class="label_geral">Lançar:</span>
+            <input name="txtLance" type="number" value="0" id="txtLance" disabled="disabled"
+                class="aspNetDisabled label_geral input_lance text-center" onkeyup="filtraNumeros(this, event)" />
+            <span id="Label7" class="label_geral"></span>
+
+            <input type="submit" name="btnLance" value="Próximo Lance" id="btnLance" disabled="disabled"
+                class="aspNetDisabled btn_input" />
+            <input type="submit" name="btnComprador" value="Finalizar Compra" id="btnComprador" disabled="disabled"
+                class="aspNetDisabled btn_input float-right bg-success" />
+        </div>
+
+        <div id="principal">
+            <div id="Aceite" class="my-5">
+                <span id="Label4" class="label_geral d-block mb-3">Mudar Último Lance:</span>
+                <input type="submit" name="btnAceitar" value="ACEITAR" id="btnAceitar" disabled="disabled"
+                    class="aspNetDisabled btn_input bg-success" />
+                <input type="submit" name="btnRecusar" value="RECUSAR" id="btnRecusar" disabled="disabled"
+                    class="aspNetDisabled btn_input bg-danger" />
+            </div>
+
+            <div id="controle">
+                <panel>
+                    <iframe id="I1" src="lancesweb.aspx" width="100%" height="200" name="I1"></iframe>
+                </panel>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/mascara.js" type="text/javascript"></script>
+<script type="text/javascript">
+    //<![CDATA[
+    var theForm = document.forms['form_controle'];
+    if (!theForm) {
+        theForm = document.form_controle;
+    }
+
+    function __doPostBack(eventTarget, eventArgument) {
+        if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+            theForm.__EVENTTARGET.value = eventTarget;
+            theForm.__EVENTARGUMENT.value = eventArgument;
+            theForm.submit();
+        }
+    }
+    //]]>
+</script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+</html>
