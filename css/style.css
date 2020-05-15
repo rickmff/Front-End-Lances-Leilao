@@ -12,6 +12,7 @@
     }
 
     iframe {
+        transform: scale(0.9);
         border-width: 1.25px !important;
         border-color: #a78e09 !important;
     }
@@ -68,7 +69,7 @@
         height: 100px;
         font-size: 42px;
         color: #2b4060;
-        margin-left: auto;
+        margin-left: 8rem;
         padding-top: 1rem;
         text-align: center;
     }
@@ -78,6 +79,33 @@
     }
 
     /* SELECT EVENT */
+
+    .app {
+        float: right;
+        position: relative;
+        margin-right: 360px;
+    }
+
+    .phone {
+        position: absolute;
+        transform: scale(0.9);
+        background: url("../img/phone.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: transparent;
+        width: 320px;
+        height: 650px;
+        margin-top: -190px;
+      }
+
+      .ebl-web {
+        position: absolute;
+        margin-top: -141px;
+        left: 30px;
+        width: 265px;
+        height: 220px;
+        z-index: -1;
+      }
 
     .btn_input {
         padding-top: 4.5px;
@@ -106,16 +134,52 @@
         height: 200px;
     }
 
-    .iframe_lances {
+    .label_phone {
+        position: absolute;
+        left: 25px;
+        color: #a78e09;
+    }
+
+    .label_phone:first-child {
+        top: 280px;
+    } 
+
+    .label2 {
+        top: 425px;
+    } 
+
+    .iframe_phone {
+        position: absolute;
+        top: 450px;
+        left: 10.5px;
         float: right;
         height: 100px;
     }
 
-    #btnComprador {
-        width: 300px;
-        border: 1px solid #a78e09;
+    .iframe2 {   
+        top: 305px;             
+    }
+
+    .iframe_btn {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border-radius: 0 0 27px 27px;
+        position: absolute;
+        left: 20.5px;
+        top: 575px;
+        width: 282.5px;
+        text-transform: uppercase;
+        font-size: 18px;
+        z-index: -1;
     }
 
     .bg-success:hover,.bg-danger:hover {
-    opacity: 0.8;
+        opacity: 0.8;
+    }
+
+    .lancesweb
+    {
+        margin-left: -60px;
+        float: left;
+        width: 105%;
     }

@@ -1,0 +1,162 @@
+.body {
+}
+.div_principal
+{
+width: 100%;
+height: 100%;
+}
+.div_topo
+{
+width : 100%;
+height : 60px;
+vertical-align :top;
+align-items:center;
+}
+.div_selecao
+{
+width : 100%;
+height : 100px;
+vertical-align :top;
+align-items:center;
+}
+.label_geral
+{
+font-family:arial,helvetica,sans-serif;
+font-size:14px;
+color:black;
+}
+.text_money_geral
+{
+font-family:arial,helvetica,sans-serif;
+font-size:14px;
+color:black;
+text-align : right;
+}
+.label_LanceAtual
+{
+font-family:arial,helvetica,sans-serif;
+font-size:35px;
+color:red;
+font-weight: bold;
+}
+.label_Lanceweb
+{
+font-family:arial,helvetica,sans-serif;
+font-size:35px;
+color:green;
+font-weight: bold;
+}
+.div_lance
+{
+
+}
+.btn_iniciar
+{
+font-family:arial,helvetica,sans-serif;
+font-size:14px;
+color:black;
+font-weight: bold;
+}
+.div_controle
+{
+}
+.lbl_titulo
+{
+font-family:arial,helvetica,sans-serif;
+font-size:40px;
+color : blue;
+font-weight :bold;
+
+}
+.div_Login
+{
+
+
+}
+.btn:focus, .btn::-moz-focus-inner{
+  outline:none;
+  border:none;
+}
+.btn{
+  font-family: arial,helvetica,sans-serif;
+  font-size:14px;
+  text-transform: uppercase;
+  font-weight:700;
+  border:none;
+  padding:10px;
+  cursor: pointer;
+  display:inline-block;
+  text-decoration: none;
+}
+.btn-green{
+  background:green;
+  color:#fff;
+  box-shadow:0 5px 0 #006000;
+}
+.btn-green:hover{
+  background:#006000;
+  box-shadow:0 5px 0 #003f00;
+}
+.btn-purple{
+  background:purple;
+  color:#fff;
+  box-shadow:0 5px 0 #670167;
+}
+.btn-purple:hover{
+  background:#670167;
+  box-shadow:0 5px 0 #470047;
+}
+.btn-red{
+  background:red;
+  color:#fff;
+  box-shadow:0 5px 0 #d20000;
+}
+.btn-red:hover{
+  background:#d20000;
+  box-shadow:0 5px 0 #b00000;
+}
+.btn-green:active, .btn-purple:active, .btn-red:active{
+  position:relative;
+  top:5px;
+  box-shadow:none;
+}
+.lbl_popup{
+    font-family:arial,helvetica,sans-serif;
+    font-size:20px;
+    color:darkblue;
+}
+.modalPopup {
+    border: 3px solid black;
+    /*background-color : #ffffdd;*/
+    /*background-image: url('~/forrms/img/festa2.png');*/
+    padding: 3px;
+    width: 111%;
+    /*top: 1012px;*/
+    left: -6px;
+}
+.label_BRANCA
+{
+font-family:arial,helvetica,sans-serif;
+font-size:35px;
+color:white;
+font-weight: bold;
+}
+.coluna_Verde
+{
+background-color :green;
+}
+.coluna_Amarela
+{
+background-color:yellow;
+}
+.coluna_cinza
+{
+background-color:lightgrey;
+}
+.label_BRANCA_INFO
+{
+font-family:arial,helvetica,sans-serif;
+font-size:20px;
+color:white;
+font-weight: bold;
+}

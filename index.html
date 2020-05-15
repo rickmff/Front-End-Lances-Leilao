@@ -4,7 +4,7 @@
 
 <head>
     <title> Estancia Bahia leilões - Lances </title>
-    <link href="css/controle.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -38,12 +38,24 @@
                 <!--  <i class="fas fa-signal mr-1"></i> -->
                 Online
             </span>
-            <iframe id="ifLogados" class="ml-auto mt-2" src="ativos.aspx" name="I1"></iframe>
-
             <div id="Panel1"></div>
         </div>
 
         <div id="selecao">
+
+            <div class="app">
+                <div class="phone">
+                    <span id="Label4" class="label_phone">Usuários ativos:</span>
+                    <iframe id="ifLogados" class="iframe_phone" src="ativos.aspx" name="I1"></iframe>
+
+                    <span id="Label4" class="label_phone label2">Ultimo lance:</span>
+                    <iframe id="I2" class="iframe_phone iframe2" src="lance_web.aspx" name="I1"></iframe>
+
+                    <input type="submit" name="btnComprador" value="Finalizar Compra" id="btnComprador"
+                        disabled="disabled" class="aspNetDisabled iframe_btn btn_input bg-success" />
+                </div>
+                <img class="ebl-web" src="img/eblweb.png" alt="logo-app-ebl-web" />
+            </div>
 
             <form method="post" action="./lanceweb.aspx" id="form_controle">
                 <div class="my-3">
@@ -56,7 +68,7 @@
                         </option>
                     </select>
                     <input type="submit" name="btnIniEvent" value="Iniciar Leilão" id="btnIniEvent" disabled="disabled"
-                        class="aspNetDisabled btn_input"/>
+                        class="aspNetDisabled btn_input" />
                 </div>
                 <div class="my-3">
                     <span id="Label3" class="label_geral d-block mb-2">Selecione o Lote:</span>
@@ -70,7 +82,7 @@
                 </div>
             </form>
 
-            <iframe id="I2" class="iframe_lances" src="lance_web.aspx" width="300" height="60" name="I1"></iframe>
+
 
             <div class="my-5">
                 <span id="Label6" class="label_geral">Lance Atual:</span>
@@ -85,8 +97,6 @@
 
                 <input type="submit" name="btnLance" value="Próximo Lance" id="btnLance" disabled="disabled"
                     class="aspNetDisabled btn_input" />
-                <input type="submit" name="btnComprador" value="Finalizar Compra" id="btnComprador" disabled="disabled"
-                    class="aspNetDisabled btn_input ml-auto bg-success" />
             </div>
         </div>
 
@@ -100,9 +110,7 @@
             </div>
 
             <div id="controle">
-                <panel>
-                    <iframe id="I1" src="lancesweb.aspx" width="100%" height="200" name="I1"></iframe>
-                </panel>
+                <iframe id="I1" src="lancesweb.aspx" class="lancesweb" name="I1"></iframe>
             </div>
         </div>
     </div>

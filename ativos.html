@@ -1,0 +1,89 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><link href="css/controle.css" rel="stylesheet" /><title>
+
+</title></head>
+<body>
+    <form method="post" action="./ativos.aspx" id="form1" style="background-color: #000000">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjA5MDA2ODA3Nw9kFgICAw9kFgYCBQ8PFgIeBFRleHQFATFkZAIHDw8WAh8ABQEwZGQCCQ8PFgIfAAUBNmRkZDAzN3eHNWi6FrhV0xn/X7UxL1gbfT8a6FDS5FTXnUPk" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=VqgP8GtTzDOZ-yF8K9dGhQ6WCoLp6jzn5uUGEKuGZRVy1d2lKwCpxNWzCB-uMur2T4u_ZcwDA99UkW8USnZ4gddsOYGUA0rnkVJQoBe5g041&amp;t=637110104437816177" type="text/javascript"></script>
+
+
+<script src="/ScriptResource.axd?d=fkwgs8nbCti5VS5Uu0s3y-2nmlVTSAxcStZ686G4cNt5G4WSnmgfvKKUo4x5Pt0bRcFKsleH_UT-38gaHHQ3Ki6952eiYglL6Vh9K7LaXCPQRNKsKA_FsD9cGnq1vWLnwQCkUpoENs2dF3mD1h_h9bzTVZjuMyHCqEzOfzFlDpM1&amp;t=ffffffffe6d5a9ac" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=KlcIpOSR9XhYYSZY-6aXZFGVqDExe1Zjsec5TT7PqPuVHlgZYeHaVnLmaiL693GsWcronsCqkXpxPFUInFrmtcw7j9qvwbPprvF4YBpj7Qy3iEQEBdtRZ9BftQonxPMBu73ySusWr2CAD6KyIOCF7Fv7i4ftxwtKegOT4TbcIHKKftshfonzWqKWCaXKNMDt0&amp;t=ffffffffe6d5a9ac" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=R2Hn5GKCByGHZT5sosnewbmP6VSi3dok1he5qIoDCzKZ0DBVVq-WjF2HqF4SIgmXEFq8uN4Gr_z2wOpCd4VpgbLc_Qay_5ZM9uD3xUtILBtJpy2mIM0nc9zUi8Pv8WzTDJ5CIzLvsyLPtX_bm5lHc8qOTXLCo8nNPHpoXQYI2-w1&amp;t=ffffffffe6d5a9ac" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="55CFB8E5" />
+</div>
+        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ScriptManager1', 'form1', [], [], [], 90, '');
+//]]>
+</script>
+
+    <span id="Timer1" style="visibility:hidden;display:none;"></span>
+    <div style="background-color: #000000">
+        <table>
+            <tr>
+                <td style="background-color :green;">
+                    <span id="lbl300" style="font-family:arial,helvetica,sans-serif; font-size:40px; color:white; font-weight: bold;">1</span>
+                </td>
+                <td style="background-color:yellow;">
+                    <span id="lbl600" style="font-family:arial,helvetica,sans-serif; font-size:40px; color:black; font-weight: bold;">0</span>
+                </td>
+                <td style="background-color:lightgrey;">
+                    <span id="lbldia" style="font-family:arial,helvetica,sans-serif; font-size:40px; color:black; font-weight: bold;">6</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span id="Label1" style="font-family:arial,helvetica,sans-serif; font-size:20px; color:white; font-weight: bold;">Ativos</span>
+                </td>
+                <td>
+                    <span id="Label2" style="font-family:arial,helvetica,sans-serif; font-size:20px; color:white; font-weight: bold;">Recente</span>
+                </td>
+                <td>
+                    <span id="Label3" style="font-family:arial,helvetica,sans-serif; font-size:20px; color:white; font-weight: bold;">No dia</span>
+                </td>
+            </tr>
+        </table>
+    
+    </div>
+    
+
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":10000,"uniqueID":"Timer1"}, null, null, $get("Timer1"));
+});
+//]]>
+</script>
+</form>
+</body>
+</html>
